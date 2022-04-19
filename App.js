@@ -24,6 +24,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import { club } from './models/clubs/club';
 const App: () => React$Node = () => {
   return (
     <>

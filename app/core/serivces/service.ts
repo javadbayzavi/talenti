@@ -8,6 +8,11 @@ export abstract class service
     public abstract Delete(T_Model: any): boolean;
     public abstract Fetch(T_Model: any): any;
 
+    constructor(endPoint: URL)
+    {
+        this.setEndPoint(endPoint);
+    }
+
     public getEndPoint():URL
     {
         return this.serviceEndPoint;

@@ -1,4 +1,6 @@
-export class player
+import { baseModel } from '../../app/core/models/baseModel';
+
+export class player extends baseModel
 {
     private name: string;
     private family: string;
@@ -7,7 +9,8 @@ export class player
     private rightfoot: boolean;
     private currentheight: number;
     private currentwieght: number;
-    public constructor(nam,famil,bdate,left,right,weight,height) {
+    public constructor(uid,nam,famil,bdate,left,right,weight,height) {
+        super(uid);
         this.name = nam;
         this.family = famil;
         this.birthdate = bdate;

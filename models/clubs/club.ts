@@ -1,4 +1,4 @@
-import { baseModel } from './app/core/models/baseModel';
+import { baseModel } from '../../app/core/models/baseModel';
 
 export class club extends baseModel {
   private id: number;
@@ -6,7 +6,7 @@ export class club extends baseModel {
   private logo: string;
 
   constructor(id, title, logo) {
-    this.id = id;
+    super(id);
     this.title = title;
     this.logo = logo;
   }

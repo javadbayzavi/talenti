@@ -1,3 +1,9 @@
+/*
+*** Copyright 2021 - GNU 3.0 Free license
+*** @author: Javad Bayzavi ('https://github.com/javadbayzavi')
+*** Package: Talenti - Models
+*/
+
 import { baseModel } from '../../app/core/models/baseModel';
 
 export class club extends baseModel {
